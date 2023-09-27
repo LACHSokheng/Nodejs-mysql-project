@@ -3,3 +3,26 @@ GET http://localhost:4000/products
 
 ###
 GET http://localhost:4000/products/15
+###
+POST http://localhost:4000/products
+Content-Type: application/json
+
+{
+    "productID":19,
+    "productName": "Coconat Juie",
+    "price": "1.00",
+    "sellDate": "2015-07-07T00:00:00"
+}
+
+###
+DELETE http://localhost:4000/products/19
+
+###
+PUT http://localhost:4000/products/19
+Content-Type: application/json
+
+{
+    "productName": "Updated Product Name",
+    "price": "2.00",
+    "sellDate": "2023-09-27T00:00:00"
+}
